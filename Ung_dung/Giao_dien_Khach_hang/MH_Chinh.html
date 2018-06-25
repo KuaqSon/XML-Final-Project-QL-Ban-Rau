@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="css/dinh_dang_man_hinh_chinh.css">
     <link rel="stylesheet" href="css/site.css">
     <!--Test-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <meta name="keywords" content="Samsung, LG, Sony Ericsson, Motorola web design" />
-    <!-- <link href='//fonts.googleapis.com/css?family=Londrina+Solid|Coda+Caption:800|Open+Sans' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="css/responsiveslides.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
@@ -36,13 +33,67 @@
 
 <body style="background-color: white">
     <!-- header-->
+    <!-- Menu-->
     <div class="container">
-        <div class="row header">
-            <div class="col-xs-12 col-md-12 col-sm-12" id="Th_Cua_hang">
-            </div>
+        <div class="row menu">
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <div>
+                    <button class="btn" id="Th_Tat_ca" type="button">
+                        <span class="fa fa-home"></span>
+                         Trang chủ
+                    </button>
 
+                    <button type="button" class="chu_dau btn dropdown-toggle" data-toggle="dropdown">
+                            <span class="fa fa-database"></span>
+                        Loại Rau
+                    </button>
+                    <div class="dropdown-menu">
+                        <button class="dropdown-item btn" id="Th_Rau_an_la" type="button" href="#">
+                             Rau Ăn Lá
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Rau_an_than" type="button" href="#">
+                             Rau Ăn Thân
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Rau_an_qua" type="button" href="#">
+                             Rau Ăn Quả
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Rau_an_cu" type="button" href="#">
+                             Rau Ăn Củ
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Rau_an_hat" type="button" href="#">
+                             Rau Ăn Hạt
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Trai_cay" type="button" href="#">
+                             Trái Cây
+                        </button>
+                        <button class="dropdown-item btn" id="Th_Thuc_pham_kho" type="button" href="#">
+                             TP Khô
+                        </button>
+                    </div>
+                    <button class="btn" id="Th_Tim_kiem" type="button">
+                        <span class="fa fa-search"></span>
+                         Tìm Kiếm
+                    </button>
+
+                    <button class="btn" id="Th_Gio_hang" type="button" data-toggle="modal" data-target="#myModal">
+                        <span class="fa fa-shopping-cart"></span>
+                         Giỏ Hàng
+                    </button>
+                    <button class="btn" id="Th_Lien_he" type="button">
+                        <span class="fa fa-phone"></span>
+                         Liên Hệ
+                    </button>
+                    <button class="btn" id="Th_Login" type="button">
+                        <span class="fa fa-sign-in"></span>
+                         Đăng nhập
+                    </button>
+
+                    <div id="Th_modal"></div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Menu-->
     <div class="container">
         <!--start-image-slider-->
 
@@ -66,139 +117,33 @@
 
 
     </div>
-    <!-- header-->
-    <!-- Menu-->
     <div class="container">
-        <div class="row menu">
-            <div class="col-xs-12 col-md-12 col-sm-12">
-                <div class="">
-                    <button class="btn btn-default" id="Th_Tat_ca" type="button">
-                        <span class="fa fa-home fa-3x"></span>
-                        <br> Trang chủ
-                    </button>
-
-                    <button type="button" class="chu_dau btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span class="fa fa-database fa-3x"></span>
-                        <br>Loại Rau
-                    </button>
-                    <div class="dropdown-menu">
-                        <button class="dropdown-item btn btn-default" id="Th_Rau_an_la" type="button" href="#">
-                            <br> Rau Ăn Lá
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Rau_an_than" type="button" href="#">
-                            <br> Rau Ăn Thân
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Rau_an_qua" type="button" href="#">
-                            <br> Rau Ăn Quả
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Rau_an_cu" type="button" href="#">
-                            <br> Rau Ăn Củ
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Rau_an_hat" type="button" href="#">
-                            <br> Rau Ăn Hạt
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Trai_cay" type="button" href="#">
-                            <br> Trái Cây
-                        </button>
-                        <button class="dropdown-item btn btn-default" id="Th_Thuc_pham_kho" type="button" href="#">
-                            <br> Thực Phẩm Khô
-                        </button>
-                    </div>
-                    <button class="btn btn-default" id="Th_Tim_kiem" type="button">
-                        <span class="fa fa-search fa-3x"></span>
-                        <br> Tìm Kiếm
-                    </button>
-
-                    <button class="btn btn-default" id="Th_Gio_hang" type="button" data-toggle="modal" data-target="#myModal">
-                        <span class="fa fa-shopping-cart fa-3x"></span>
-                        <br> Giỏ Hàng
-                    </button>
-                    <button class="btn btn-default" id="Th_Lien_he" type="button">
-                        <span class="fa fa-phone fa-3x"></span>
-                        <br> Liên Hệ
-                    </button>
-                    <button class="btn btn-default" id="Th_Login" type="button">
-                        <span class="fa fa-sign-in fa-3x"></span>
-                        <br> Đăng nhập
-                    </button>
-
-                    <div id="Th_modal"></div>
-
-
-                </div>
+        <div class="row header">
+            <div class="col-xs-12 col-md-12 col-sm-12" id="Th_Cua_hang">
             </div>
         </div>
     </div>
-    <!-- Menu-->
+    <!-- header-->
+
     <!-- content-->
     <div class="container">
         <div class="row content">
 
+            <!-- <iframe id='Khung_Chuc_nang' style="margin-top: -6px"></iframe> -->
             <iframe id='Khung_Chuc_nang' style="margin-top: -6px"></iframe>
-
         </div>
     </div>
     <!-- content-->
     <!-- footer-->
-    <div class="container" style="padding-top: 37px;margin-top: -67px;">
-        <div class="badge-footer col-lg-11 col-lg-offset-1" style="padding-top: 37px;">
-            <div class="fooder">
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-lg-3">
-                            <div class="row">
-                                <h5>Infomation</h5>
-                                <ul class="list-menu">
-                                    <li>
-                                        <a href="https://www.hcmus.edu.vn/">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.facebook.com/tranthaison.duong">Contact</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://news.zing.vn/">News</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://privacy.google.com">Privacy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Social -->
-                <div class="col-lg-4">
-                    <div class="row">
-                        <div class="social">
-                            <h5>Social Network</h5>
-                            <ul class="list-menu-icon">
-                                <li>
-                                    <a class="icon fa fa-facebook" href="https://www.facebook.com/tranthaison.duong">
-                                        <span class="list-menu-icon-2"> Facebook</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="icon fa fa-instagram" href="https://www.instagram.com/agirlmag/">
-                                        <span class="list-menu-icon-2"> Instagram</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
 
         <div class="row footer">
             <div class="Chu_cuoi col-xs-12 col-md-12 col-sm-12" id="Th_Cuoi_trang" style="font-family: font_legend">
-
             </div>
         </div>
-    </div>
+  
     <!-- footer-->
 
 

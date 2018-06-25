@@ -159,12 +159,12 @@ function Khoi_dong_Du_lieu_Ung_dung() {
     Loai_Doi_tuong = "Nguoi_dung"
     Du_lieu.Danh_sach_Nguoi_dung = Luu_tru.Doc_Danh_sach(Loai_Doi_tuong)
     Du_lieu.Cua_hang = {
-        'Ten': "SSS BÁN RAU",
+        'Ten': "Double Son Rau Sạch",
         'Ma_so': "CH_1",
-        'Dien_thoai': "01628010342",
-        'Mail': "anson1907@gmail.com",
+        'Dien_thoai': "01678806905",
+        'Mail': "qson.ng@gmail.com",
         'Dia_chi': "227 Nguyễn Văn Cừ Quận 5 Tp Hồ Chí Minh Việt Nam",
-        'footer': "HCMUS T-AIM Copyright©  2018"
+        'footer': "Double Son Copyright©"
     };
     Du_lieu.Quan_ly = {};
     Du_lieu.Danh_sach_Nguoi_dung.forEach(Nguoi_dung => {
