@@ -33,9 +33,9 @@ class XL_RAU {
         var Ma_so = Rau.Ma_so;
         var noi_dung = "";
         noi_dung += '<form name="san_pham">';
-        noi_dung += '<div class="col-xs-12 col-sm-4 col-md-3">';
-        noi_dung += '<div class="thumbnail" style="height: 280px">';
-        noi_dung += '<img src="../../Dich_vu/Du_lieu/Images/Rau/' + Rau.Ma_so + '.png" alt="" class="img-responsive" style="width:150px;height: 150px">';
+        noi_dung += '<div class="col-md-3 ">';
+        noi_dung += '<div class="thumbnail productItem" style="height: 280px">';
+        noi_dung += '<img src="../../Dich_vu/Du_lieu/Images/Rau/' + Rau.Ma_so + '.png" alt="" class="img-responsive" style="width:200px;height: 200px">';
         noi_dung += '<div class="caption">'
         noi_dung += '<h4 class="text-primary">' + Rau.Ten + '</h4>';
         noi_dung += '<span class="text-danger">Price:' + Tao_Chuoi_The_hien_So_thuc_duong(Rau.Don_gia_Ban, 0) + ' VND</span></<br>';
