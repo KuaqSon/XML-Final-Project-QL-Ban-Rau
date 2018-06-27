@@ -21,10 +21,11 @@
     <!-- Table-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2 class="chu_dau">Danh sách sản phẩm</h2>
+        <br>
         <div class="table-responsive">
             <table class="table table-bordered table-light table-hover">
-                <thead class="thead-dark">
-                    <tr class="text-primary">
+                <thead>
+                    <tr style="background-color: rgb(17, 201, 57); color: white;">
                         <th>Ảnh</th>
                         <th>Tên</th>
                         <th>Loại</th>
@@ -47,7 +48,7 @@
     <script>
         XL_DU_LIEU.Khoi_dong_Du_lieu((Du_lieu) => {
             var Quan_ly = Du_lieu.Quan_ly;
-            Th_Nhan_vien.innerHTML = "Hello  " + Quan_ly.Ho_ten + ", Welcome to manager site!"
+            // Th_Nhan_vien.innerHTML = "Hello  " + Quan_ly.Ho_ten + ", Welcome to manager site!"
 
             var Danh_sach_Rau = Du_lieu.Danh_sach_Rau;
             Danh_sach_Rau.forEach(Rau => {

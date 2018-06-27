@@ -5,7 +5,7 @@
 }
 body {
     font-size: 12px;
-    background-color: rgb(223, 185, 114);
+    background-color: rgb(17, 201, 57);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -22,11 +22,11 @@ tr {
 }
 
 .header {
-    background-color: rgb(223, 185, 114);
+    background-color: rgb(17, 201, 57);
     color: #fff;
     padding: 5px;
     margin: 0px 5px;
-    border: 1px solid rgb(223, 185, 114);
+    border: 1px solid rgb(17, 201, 57);
 }
 
 iframe {
@@ -74,12 +74,12 @@ iframe {
 
 .footer {
     padding: 5px;
-    background-color: rgb(223, 185, 114);
+    background-color: rgb(17, 201, 57);
     color: #fff;
     margin: 0px 5px;
     font-size: 1em;
     font-weight: 200;
-    border: 1px solid rgb(223, 185, 114);
+    border: 1px solid rgb(17, 201, 57);
 }
 
 .badge {

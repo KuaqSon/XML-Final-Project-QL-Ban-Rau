@@ -21,27 +21,30 @@
     </div>
     <div class="container">
         <div class="row">
-            <label>Chọn loại Rau:</label>
-            <select id="Th_loai_rau">
-                <option value="Rauanla">Rau ăn lá </option>
-                <option value="Rauanthan">Rau ăn thân </option>
-                <option value="Rauanqua">Rau ăn quả </option>
-                <option value="Rauancu">Rau ăn củ </option>
-                <option value="Rauanhat">Rau ăn hạt </option>
-                <option value="Traicay">Trái cây </option>
-                <option value="Thucphamkho">Thực phẩm khô </option>
-            </select>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>Loại Sản Phẩm:</h3>
+                <select id="Th_loai_rau" class="form-control" style="width: 200px; height: auto; font-size: 120%;">
+                    <option value="Rauanla">Rau ăn lá </option>
+                    <option value="Rauanthan">Rau ăn thân </option>
+                    <option value="Rauanqua">Rau ăn quả </option>
+                    <option value="Rauancu">Rau ăn củ </option>
+                    <option value="Rauanhat">Rau ăn hạt </option>
+                    <option value="Traicay">Trái cây </option>
+                    <option value="Thucphamkho">Thực phẩm khô </option>
+                </select>
+            </div>
         </div>
     </div>
+    <br>
     <!-- Table-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2 class="chu_dau">Danh sách : </h2>
-        <button class="btn btn-lg btn-danger" id="Th_Dong_y">Cập nhật</button>
+        <br>
         <p></p>
         <div class="table-responsive">
             <table class="table table-condensed table-bordered table-secondary table-hover table-striped">
-                <thead class="thead-dark">
-                    <tr class="text-primary">
+                <thead>
+                    <tr style="background-color: rgb(17, 201, 57); color: white;">
                         <th>Sản phẩm</th>
                         <th>Loại</th>
                         <th>Đơn Giá cũ</th>
@@ -53,6 +56,7 @@
                 </tbody>
             </table>
         </div>
+        <button class="btn btn-lg btn-danger" id="Th_Dong_y">Cập nhật</button>
     </div>
     <!-- End Table-->
 
@@ -63,7 +67,7 @@
         var Danh_sach_Rau = ""
         XL_DU_LIEU.Khoi_dong_Du_lieu((Du_lieu) => {
             var quan_ly = Du_lieu.Quan_ly;
-            Th_Nhan_vien.innerHTML = "Hello " + quan_ly.Ten + " , Welcome to manager site"
+            // Th_Nhan_vien.innerHTML = "Hello " + quan_ly.Ten + " , Welcome to manager site"
         })
         Th_loai_rau.onchange = () => {
             Loai_rau = Th_loai_rau.value;

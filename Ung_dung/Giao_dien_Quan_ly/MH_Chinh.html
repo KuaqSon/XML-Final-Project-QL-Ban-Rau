@@ -26,13 +26,6 @@
     <div class="container">
         <div class="row header">
             <div class="col-xs-12 col-md-12 col-sm-12" id="Th_Cua_hang">
-                <div class="col-xs-12 col-md-12 col-sm-12" id="Th_Cua_hang">
-                    <!-- <h2 class="pull-left" style="color: white; font-family: font_face;font-size: 70px;margin-top:12px;">SSS BÁN RAU</h2>
-                    <h4 class="text-info badge pull-right">Phone: 01628010342
-                        <br>Email: anson1907@gmail.com
-                        <br>Address: 137E Nguyễn Chí Thanh, Q.Tân Bình, TpHCM;
-                    </h4> -->
-                </div>
             </div>
 
         </div>
@@ -42,39 +35,39 @@
     <div class="container">
         <div class="row menu">
             <div class="col-xs-12 col-md-12 col-sm-12">
-                <div class="">
-                    <button class="btn btn-default" id="Th_Tat_ca" type="button">
-                        <span class="fa fa-home fa-3x"></span>
-                        <br> Trang chủ
+                <div>
+                    <button class="btn" id="Th_Tat_ca" type="button">
+                        <span class="fa fa-home "></span>
+                        Trang chủ
                     </button>
-                    <button class="btn btn-default" id="Th_Dat_hang" type="button">
-                        <span class="fa fa-gift fa-3x"></span>
-                        <br> Đặt hàng
-                    </button>
-
-                    <button class="btn btn-default" id="Th_Giao_hang" type="button">
-                        <span class="fa fa-check fa-3x"></span>
-                        <br> Giao hàng
+                    <button class="btn" id="Th_Dat_hang" type="button">
+                        <span class="fa fa-gift "></span>
+                        Đặt hàng
                     </button>
 
-                    <button class="btn btn-default" id="Th_Them" type="button">
-                        <span class="fa fa-plus-square fa-3x"></span>
-                        <br> Thêm
+                    <button class="btn" id="Th_Giao_hang" type="button">
+                        <span class="fa fa-check "></span>
+                        Giao hàng
                     </button>
 
-                    <button class="btn btn-default" id="Th_Sua" type="button">
-                        <span class="fa fa-pencil fa-3x"></span>
-                        <br> Cập nhật
+                    <button class="btn" id="Th_Them" type="button">
+                        <span class="fa fa-plus-square "></span>
+                        Thêm
                     </button>
 
-                    <button class="btn btn-default" id="Th_Xoa" type="button">
-                        <span class="fa fa-remove fa-3x"></span>
-                        <br> Xóa
+                    <button class="btn" id="Th_Sua" type="button">
+                        <span class="fa fa-pencil "></span>
+                        Cập nhật
                     </button>
 
-                    <button class="btn btn-default" id="Th_Logout" type="button">
-                        <span class="fa fa-sign-out fa-3x"></span>
-                        <br> Thoát
+                    <button class="btn" id="Th_Xoa" type="button">
+                        <span class="fa fa-remove "></span>
+                        Xóa
+                    </button>
+
+                    <button class="btn" id="Th_Logout" type="button">
+                        <span class="fa fa-sign-out"></span>
+                        Thoát
                     </button>
 
                 </div>
@@ -140,6 +133,11 @@
         $("#myModal").modal({ backdrop: false });
     }
 
+    XL_DU_LIEU.Khoi_dong_Du_lieu((Du_lieu)=>{
+    var Cua_hang=Du_lieu.Thong_tin_Cua_hang;
+    XL_CUA_HANG.Tao_The_hien(Cua_hang,Th_Cua_hang,Th_Cuoi_trang);
+    });
+
     Th_Dang_nhap.onclick = () => {
         var Ten_Dang_nhap = Th_Ten_Dang_nhap.value
         var Mat_khau = Th_Mat_khau.value
@@ -154,7 +152,7 @@
         });
 
     }
-
+    
     Th_Tat_ca.onclick = () => {
         Khung_Chuc_nang.src = "MH_Xem_Danh_sach.html"
     }
